@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/789dfa9f2c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+
+    <section class="angry-grid">
+
+        <section>
+
+            <nav>
+                <span id="bars">
+
+                </span>
+                <img src="./images/logo.png" alt="">
+                <span><a onclick="openNotification()"><i class="fa-solid fa-bell fa-lg pointer"></i></a></span>
+            </nav>
+        </section>
+        <div class="menuNpanel">
+            <div class="menu" id="menu">
+                <ul>
+                    <li class="active"><span><i class="fa-solid fa-microchip fa-lg"></i></span><span>Proccess</span>
+                    </li>
+                    <li><span><i class="fa-solid fa-user fa-lg"></i></span><span>Logout</span></li>
+                </ul>
+            </div>
+
+            <div class="container" id="container">
+
+                <div style="margin-top: 30px;margin-bottom: 7px;">
+
+                    <span id="heading">INDUSTRIES</span>
+                </div>
+                <div class="faq-drawer">
+                    <hr>
+                    <div class="lableBar" onclick="toggel()">
+                        <label  class="faq-drawer__title" for="faq-drawer">Plants/NIRANI SUGARS LIMITED</label>
+                        <div>
+                            <a href="https://task2excel.onrender.com/api/v1/getDummySheet/all" class="downloadBTN" style="padding:10px; width: 100px; z-index: 20;">Download All  &nbsp <i class="fa-solid fa-file-arrow-down "></i></a>
+
+                            <a class="toggleBtn" ><i id="fa-chevron-down" class="fa-solid fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="faq-drawer__content-wrapper" id="list">
+
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- notifications -->
+    <section id="noti_section">
+        <div class="notificationsDiv" id="noti">
+            <div>
+                <h3>Notifications</h3>
+                <span><i class="fa-solid fa-xmark fa-lg pointer" onclick="closeNotification()"></i></span>
+            </div>
+            <div id="notiList">
+               
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    
+    <script  src="index.js"></script>
+</body>
+
+</html>
